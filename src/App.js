@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import EAWorkList from "./components/WorkItems/EAWorkList";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container-fluid">
+      <main>
+        <div className="row">
+          <div className="col mt-2">
+            <EAWorkList description="this is test description 1 for listing" header="This Worklist One" />
+          </div>
+          <div className="col mt-2">
+            <EAWorkList description="this is test description 2 for listing" header="This Worklist Two" />
+          </div>
+          <div className="col mt-2">
+            <EAWorkList description="this is test description 3 for listing" header="This Worklist Three" />
+          </div>
+        </div>
+    
+      </main>
     </div>
   );
 }
